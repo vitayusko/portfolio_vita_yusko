@@ -113,6 +113,11 @@ ul {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.paragraf-wrapper {
+  margin-top: 70px;
+}
+
 .hero-buttons-wrapper {
   display: flex;
   width: 367px;
@@ -131,7 +136,7 @@ ul {
   z-index: 3;
   top: 430px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-67%);
 }
 
 .hero-btn {
@@ -183,11 +188,12 @@ ul {
 .image-wrapper {
   position: relative;
   display: inline-block;
+  height: 515px;
 }
 .image-wrapper img {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-57%);
 }
 .profile-photo {
   z-index: 2;
@@ -201,6 +207,18 @@ ul {
   width: 811.779px;
   height: 405.889px;
   position: absolute;
+}
+
+.icon-quote-up {
+  fill: #344054;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 24px;
+}
+.icon-star {
+  fill: #fd853a;
+  width: 32px;
+  height: 32px;
 }
 
 /* Services Section */
