@@ -108,43 +108,99 @@ ul {
   }
 }
 
+.hero-inform-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero-buttons-wrapper {
+  display: flex;
+  width: 367px;
+  height: 82px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.5px);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  top: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-btn {
+  color: var(--white, #fff);
+  font-family: Numans;
+  font-size: 25.692px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.385px;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
 .paragraf {
   color: #344054;
   font-family: Numans;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: -0.3px;
 }
-.header .intro {
-  margin-top: 50px;
+
+.experience {
+  color: #171717;
+  text-align: center;
+  font-family: Numans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.3px;
+  span {
+    color: #171717;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 47px */
+    letter-spacing: -0.705px;
+  }
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.image-wrapper img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile-photo {
+  z-index: 2;
+  position: absolute;
+  top: -80px;
 }
 
-.header .intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.header .intro h1 span {
-  color: orange;
-}
-
-.header .buttons {
-  margin-top: 20px;
-}
-
-.btn {
-  background: orange;
-  padding: 10px 20px;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn-secondary {
-  background: #444;
+.bg-image {
+  top: 150px;
+  z-index: 1;
+  width: 811.779px;
+  height: 405.889px;
+  position: absolute;
 }
 
 /* Services Section */
