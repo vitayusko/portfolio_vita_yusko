@@ -1,0 +1,190 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* container */
+
+.container {
+  width: 1440px;
+  padding: 40px 70px;
+}
+/* Header */
+.header {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 50px;
+  padding: 30px 50px;
+}
+
+.header .container {
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  color: var(--white, #fff);
+  font-family: Numans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.header .intro {
+  margin-top: 50px;
+}
+
+.header .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header .intro h1 span {
+  color: orange;
+}
+
+.header .buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background: orange;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary {
+  background: #444;
+}
+
+/* Services Section */
+.services {
+  background: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+.experience {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.timeline {
+  list-style: none;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  width: 45%;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #222;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+  background: #111;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer form input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer form button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer p {
+  margin-top: 20px;
+  color: #777;
+}
