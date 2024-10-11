@@ -73,10 +73,23 @@
             </div>
           </div>
           <div class="experience-wrapper">
-            <svg class="icon-star">
-              <use xlink:href="assets/svg/icons.svg#icon-star"></use>
-            </svg>
-
+            <div class="icons-wrapper">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/icons.svg#icon-star"></use>
+              </svg>
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/icons.svg#icon-star"></use>
+              </svg>
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/icons.svg#icon-star"></use>
+              </svg>
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/icons.svg#icon-star"></use>
+              </svg>
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/icons.svg#icon-star"></use>
+              </svg>
+            </div>
             <p class="experience">
               <span>10 Years</span> <br />
               Experience
@@ -89,19 +102,76 @@
     <!-- Services Section -->
     <section id="services" class="services">
       <div class="container">
-        <h2>My Services</h2>
+        <div class="service-title-wrapper">
+          <h2 class="service-title"><span>My</span> Services</h2>
+          <p class="service-paragraf">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br />
+            lacus nunc, posuere in justo vulputate, bibendum sodales
+          </p>
+        </div>
         <div class="services-grid">
           <div class="service-card">
-            <h3>UI/UX Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="service-card-title">Landing Page</h3>
+            <div class="service-img-wrapper">
+              <div class="service-img-bg-up"></div>
+              <div class="service-img-bg-down"></div>
+              <img
+                src="./assets/img/aplication2.jpeg"
+                alt=""
+                class="service-card-img"
+              />
+            </div>
+            <div class="service-btn-mask">
+              <button class="service-btn">
+                <svg class="icon icon-up-right">
+                  <use
+                    xlink:href="assets/svg/symbol-defs.svg#icon-up-right"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="service-card">
-            <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="service-card-title">Landing Page</h3>
+            <div class="service-img-wrapper">
+              <div class="service-img-bg-up"></div>
+              <div class="service-img-bg-down"></div>
+              <img
+                src="./assets/img/aplication.jpeg"
+                alt=""
+                class="service-card-img"
+              />
+            </div>
+            <div class="service-btn-mask">
+              <button class="service-btn">
+                <svg class="icon icon-up-right">
+                  <use
+                    xlink:href="assets/svg/symbol-defs.svg#icon-up-right"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="service-card">
-            <h3>Landing Page</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="service-card-title">Landing Page</h3>
+            <div class="service-img-wrapper">
+              <div class="service-img-bg-up"></div>
+              <div class="service-img-bg-down"></div>
+              <img
+                src="./assets/img/aplication2.jpeg"
+                alt=""
+                class="service-card-img"
+              />
+            </div>
+            <div class="service-btn-mask">
+              <button class="service-btn">
+                <svg class="icon icon-up-right">
+                  <use
+                    xlink:href="assets/svg/symbol-defs.svg#icon-up-right"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -130,22 +200,100 @@
         </ul>
       </div>
     </section>
+    <!-- Why Me section -->
+    <section id="hire-me" class="hire-me">
+      <div class="container experience-container">
+        <img
+          src="./assets/img/Mask group.png"
+          alt="profile_foto"
+          width="603px"
+          height="600px"
+        />
+        <div class="hire-me-info-wrapper">
+          <h2 class="hire-me-title">Why <span>Hire me</span> ?</h2>
+          <p class="hire-me-paragraf">
+            Lorem ipsum dolor sit amet, consectetur <br />
+            adipiscing elit. Duis lacus nunc, posuere in justo <br />
+            vulputate, bibendum sodales
+          </p>
+          <ul class="information-wrapper-list">
+            <li class="information-wrapper-item">
+              <h2>450+</h2>
+              <p>projects completed</p>
+            </li>
+            <li class="information-wrapper-item">
+              <h2>450+</h2>
+              <p>projects completed</p>
+            </li>
+          </ul>
+          <button class="hire-me-btn">Hire me</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio Section -->
+
     <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2>Let’s have a look at my Portfolio</h2>
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <img src="lirante-project-image.jpg" alt="Lirante Project" />
-            <h3>Lirante - Food Delivery Solution</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="another-project-image.jpg" alt="Another Project" />
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+      <div class="container portfolio-container">
+        <div class="portfolio-container-info">
+          <h2>
+            Let’s have a look at <br />
+            my <span>Portfolio</span>
+          </h2>
+          <button class="portfolio-container-btn">See All</button>
+        </div>
+        <ul class="portfolio-list">
+          <li class="portfolio-section-list-item">
+            <div class="portfolio-gradient-overlay"></div>
+
+            <img src="./assets/img/Frame 26.jpg" class="portfolio-item-img" />
+            <button class="portfolio-icon-btn">
+              <svg class="icon-light">
+                <use xlink:href="assets/svg/icons.svg#icon-light"></use>
+              </svg>
+            </button>
+            <h3 class="h-portfolio-section-visible">Lirante</h3>
+
+            <div class="portfolio-content">
+              <h3 class="h-portfolio-section">Lirante</h3>
+              <p class="overlay-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                lobortis.
+              </p>
+            </div>
+          </li>
+          <li class="portfolio-section-list-item">
+            <div class="portfolio-gradient-overlay"></div>
+
+            <img src="./assets/img/Frame 26.jpg" class="portfolio-item-img" />
+            <button class="portfolio-icon-btn">
+              <svg class="icon-light">
+                <use xlink:href="assets/svg/icons.svg#icon-light"></use>
+              </svg>
+            </button>
+            <h3 class="h-portfolio-section-visible">Lirante</h3>
+
+            <div class="portfolio-content">
+              <h3 class="h-portfolio-section">Lirante</h3>
+              <p class="overlay-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                lobortis.
+              </p>
+            </div>
+          </li>
+          <!--повтор кода для наполнения портфолио -->
+        </ul>
+        <ul class="portfolio-types-list">
+          <li class="portfolio-types-list-item">Landing page</li>
+          <li class="portfolio-types-list-item">Web-services</li>
+          <li class="portfolio-types-list-item">Telegram Mini App</li>
+        </ul>
+        <div class="portfolio-info" id="portfolio-info">
+          <p>Information about Landing page</p>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: Numans;
   line-height: 1.6;
   color: #333;
 }
@@ -215,6 +215,11 @@ ul {
   height: 36px;
   margin-bottom: 24px;
 }
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 .icon-star {
   fill: #fd853a;
   width: 32px;
@@ -222,6 +227,61 @@ ul {
 }
 
 /* Services Section */
+
+#services {
+  position: relative;
+  background-color: #171717;
+  border-radius: 50px;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/bg.jpg") no-repeat center center / cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.service-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+.service-title {
+  color: #fcfcfd;
+  font-family: Numans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 48px */
+  letter-spacing: -0.72px;
+  span {
+    color: #fd853a;
+  }
+}
+
+.service-paragraf {
+  color: var(--white, #fff);
+  font-family: Numans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+}
 .services {
   background: #f4f4f4;
   padding: 50px 0;
@@ -234,86 +294,406 @@ ul {
 }
 
 .service-card {
-  background: white;
-  padding: 20px;
-  width: 30%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Это позволит позиционировать дочерние элементы */
+  background-color: rgba(104, 104, 104, 0.2);
+  border: 2px solid rgb(129, 127, 127);
+  border-radius: 35px;
+  backdrop-filter: blur(7.5px);
+  width: 416px;
+  height: 508px;
+  flex-shrink: 0;
+  overflow: hidden; /* Скрытие элементов, выходящих за границы карточки */
 }
 
-/* Experience Section */
-.experience {
-  background: #fff;
-  padding: 50px 0;
+/* Заголовок карточки */
+.service-card-title {
+  color: var(--white, #fff);
+  font-family: Numans, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-align: left;
+  padding: 44px 37px;
 }
 
-.timeline {
-  list-style: none;
+/* Обертка для изображения и фонов */
+.service-img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 416px;
+  height: 307px;
+  margin-top: 10px;
+  border-top: 2px solid rgb(129, 127, 127);
 }
 
-.timeline li {
-  margin-bottom: 20px;
+.service-img-bg-up {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 374px;
+  height: 329px;
+  border-radius: 35px;
+  background: #9e9d9d;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Portfolio Section */
-.portfolio {
-  background: #f4f4f4;
-  padding: 50px 0;
+/* Нижний фон под верхним */
+.service-img-bg-down {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 328px;
+  height: 329px;
+  border-radius: 35px;
+  background: #757575;
+  opacity: 0.5;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.portfolio-grid {
+/* Изображение */
+.service-card-img {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  width: 416px;
+  height: 307px;
+  border-radius: 35px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* Кнопка, которая располагается поверх изображения */
+.service-btn {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: none;
+  background: #1d2939;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.service-btn-mask {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.icon-up-right {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  transform: rotate(90deg);
+}
+/* why hire me */
+#hire-me {
+  border-radius: 50px;
+  background: #f2f4f7;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 122px;
+  padding-bottom: 122px;
+}
+
+.hire-me-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-me-title {
+  color: #344054;
+  font-family: Numans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 64px */
+  letter-spacing: -0.96px;
+  margin-bottom: 47px;
+  margin-top: 63px;
+  span {
+    color: #fd853a;
+  }
+}
+
+.hire-me-paragraf {
+  color: #98a2b3;
+  font-family: Numans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  margin-bottom: 47px;
+}
+.information-wrapper-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+.information-wrapper-item {
+  width: 50%;
+  gap: 10px;
+  h2 {
+    color: #1d2939;
+    font-family: Numans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+
+  p {
+    color: #667085;
+    font-family: Numans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.3px;
+  }
+}
+
+.hire-me-btn {
+  padding: 33px 59px;
+  width: fit-content;
+  background: none;
+  border-radius: 32px;
+  border: 1px solid #151515;
+  color: #151515;
+  font-family: Numans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+/* Portfolio */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 70px;
+}
+
+.portfolio-container-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
 }
 
-.portfolio-item {
-  width: 45%;
-  text-align: center;
+.portfolio-container-info h2 {
+  color: #344054;
+  font-family: Numans;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.96px;
 }
 
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.portfolio-container-info span {
+  color: #fd853a;
 }
 
-/* Testimonials Section */
-.testimonials {
-  background: #222;
+.portfolio-container-btn {
+  display: flex;
+  padding: 20px 40px;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  background: #fd853a;
+  border: none;
   color: #fff;
-  padding: 50px 0;
-  text-align: center;
+  font-family: Numans;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.testimonial {
-  margin-bottom: 20px;
+/* Portfolio list and items */
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-/* Footer Section */
-.footer {
-  background: #111;
-  color: white;
-  padding: 30px 0;
-  text-align: center;
+.portfolio-section-list-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.footer form input {
-  padding: 10px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
+.portfolio-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.footer form button {
-  padding: 10px 20px;
-  background: orange;
-  border: none;
-  color: white;
+.portfolio-section-list-item:hover .portfolio-item-img {
+  transform: scale(1.05);
+}
+
+/* Gradient Overlay */
+.portfolio-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    207deg,
+    rgba(0, 0, 0, 0) 47.41%,
+    rgba(0, 0, 0, 0.36) 76.39%,
+    rgba(0, 0, 0, 0.5) 89.23%
+  );
+  z-index: 1; /* Располагаем под кнопкой, заголовком и параграфом */
+  pointer-events: none; /* Чтобы не мешать взаимодействию с элементами сверху */
+}
+
+/* Icon button on the top-right */
+.portfolio-icon-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fd853a;
+  background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
-  border-radius: 5px;
+  z-index: 3;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.footer p {
-  margin-top: 20px;
-  color: #777;
+.portfolio-section-list-item:hover .portfolio-icon-btn {
+  background-color: #fd853a; /* Меняем цвет кнопки на оранжевый при наведении */
+  border-color: #fd853a;
+}
+
+.portfolio-section-list-item:hover .icon-light {
+  fill: #fff; /* Меняем цвет иконки на белый при наведении */
+}
+
+.icon-light {
+  width: 32px;
+  height: 32px;
+  fill: #fd853a;
+}
+
+/* Заголовок, видимый изначально */
+.h-portfolio-section-visible {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-family: Numans, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  z-index: 3;
+  opacity: 1;
+  transition: transform 250ms ease, opacity 250ms ease; /* Плавное исчезновение и подлет вверх */
+}
+
+/* При наведении на карточку скрываем видимый заголовок */
+.portfolio-section-list-item:hover .h-portfolio-section-visible {
+  transform: translateY(-50px); /* Заголовок подлетает вверх */
+  opacity: 0; /* Заголовок исчезает */
+}
+
+/* Title and Overlay Paragraph Container */
+.portfolio-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  gap: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12.5px);
+  color: #ffead5;
+  border-radius: 12px;
+  z-index: 2;
+  transform: translateY(150%);
+  opacity: 0;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 400ms ease; /* Плавное поднятие вверх */
+  will-change: transform, opacity;
+}
+
+/* Поднимаем контейнер при наведении */
+.portfolio-section-list-item:hover .portfolio-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Заголовок внутри контейнера */
+.h-portfolio-section {
+  font-family: Numans, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: #f4f4f4;
+}
+
+/* Параграф внутри контейнера */
+.overlay-paragraph {
+  font-family: Numans;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.portfolio-types-list {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 48px;
+  margin-top: 48px;
+  justify-content: center;
+}
+
+.portfolio-types-list-item {
+  display: flex;
+  padding: 15px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: #f2f4f7;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
